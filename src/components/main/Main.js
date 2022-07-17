@@ -167,17 +167,22 @@ const Main = () => {
 
 
      <div className="footerContent">
+
+        <div className="footerSub">
             <h1>Book a call with me</h1>
 
 
             <p className="footerPara">
-                I'd love to have a chat to see how i can help you. The best first
+                I'd love to have a chat to see how i can help you. The best first 
                 step is for us to discuss your project during a free consultation.
-                then we can move forward from there.
+                <span className="paraSpan"> <br />then we can move forward from there.</span>
             </p>
 
-            <button className="header-button"> Free Consultation </button>
+            </div>
 
+            <div className="footerB">
+            <button className="header-button footerBtn"> Free Consultation </button>
+            </div>
             </div>
 
 
@@ -190,7 +195,7 @@ const Main = () => {
 
 
 
-       <div className="header">
+       <div className="header bottom">
 
         <div className="logo">
            <img src={logo} />

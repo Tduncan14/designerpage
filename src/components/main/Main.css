@@ -1,0 +1,85 @@
+.header{
+    display:flex;
+    justify-content:space-between;
+    width:90%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:2rem;
+}
+
+
+.header-button{
+     color:white;
+     outline:none;
+     border:none;
+     background-color: black;
+     padding:1rem;
+     width:14rem;
+     border-radius:3rem;
+}
+
+/* the sub content portion of the app */
+
+.content{
+    text-align:center;
+    margin-top:4.5rem;
+    justify-content: center;
+    align-self: center;
+}
+
+.content h1 {
+    font-size:56px;
+}
+
+.content p{
+    font-size:21px;
+    inline-size:900px;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:-1rem;
+  
+}
+
+.gallery{
+    display:flex;
+    width:90%;
+    justify-content: center;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:3rem;
+
+
+}
+
+.gallery  .one {
+    width:375px;
+    height:300px;
+    margin-top:1rem;
+    margin-right:1rem;
+    background-color:#755cde;
+    border-radius:7px;
+    position: relative;
+  
+}
+
+.gallery  .two {
+    width:375px;
+    height:300px;
+    margin-top:1rem;
+    margin-right:1rem;
+    background-color:#f6a560;
+    position: relative;
+  
+}
+
+
+.gallery  .three {
+    width:375px;
+    height:300px;
+    margin-top:1rem;
+    margin-right:1rem;
+    background-color:#61c4b7;
+    position: relative;
+  
+}

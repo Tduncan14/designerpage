@@ -1,12 +1,12 @@
 .container{
    
         width:90%;
-        background-color: blue;
+        /* background-color: blue; */
         height:auto;
         margin-right:auto;
         margin-left:auto;
         overflow:hidden;
-        padding-bottom:10rem;
+       
       
 
 }
@@ -102,7 +102,6 @@
     height:350px;
     margin-top:1rem;
     margin-right:1rem;
-    background-color:gray;
     position: relative;
     border-radius:7px;
   
@@ -134,20 +133,68 @@
 
 .illu{
     background-color:#eb7565;
-    height:44%;
+    height:50%;
     width:100%;
     position:relative;
-    top:-.4rem;
+    top:.4rem;
     border-radius:7px;
 }
 
+
+.illu img{
+    height:75px;
+    position:absolute;
+    top:1rem;
+    left:12rem;
+}
+
+.illu h1{
+    position:absolute;
+    color:white;
+    font-weight: 400;
+    top:6rem;
+    left:2.5rem;
+}
+
+
+
+.ui img{
+    height:60px;
+    position:absolute;
+    top:1rem;
+    left:6.5rem;
+}
+
+.ui h1{
+    color:white;
+    font-weight:400;
+    position:absolute;
+    top:4.5rem;
+    left:1rem;
+}
+
+
+.app img{
+    position:absolute;
+    top:1rem;
+    left:5.5rem;
+}
+
+
+.app h1{
+    color:white;
+    position:absolute;
+    top:4.5rem;
+    font-weight:400;
+    left:1.5rem;
+}
+/* end of gallery 2 */
 
 .gallery  .three {
     width:375px;
     height:350px;
     margin-top:1rem;
     margin-right:1rem;
-    background-color:gray;
     position: relative;
     border-radius:7px;
 }
@@ -236,9 +283,52 @@
     display:inline-block;
     width:40%;
     margin-left:1.5rem;
-    margin-right:1.5rem;
+    margin-right:2.5rem;
        
 }
+
+.arrows {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.arrows img{
+    display:inline-block;
+    margin-right:1rem;
+    border-radius: 50%;
+    background-color:black;
+    padding:1.9rem;
+    margin-top:2rem;
+}
+
+.arrows img:hover{
+    background-color:#755cde;
+    cursor:pointer;
+}
+
+
+/* the footer className */
+
+.sliders{
+    margin-top:6rem;
+}
+
+
+.footerContent{
+    background:black;
+    width:90%;
+    margin-top:4rem;
+    text-align:center;
+    justify-content: center;
+    margin-right:auto;
+    margin-left:auto;
+    height:16rem;
+    border-radius:7px;
+}
+
 
 .imageSlide img{
     border-radius:10px;

@@ -13,6 +13,9 @@ import Image2 from '../assets/image-slide-2.jpg';
 import Image3 from '../assets/image-slide-3.jpg';
 import Image4 from '../assets/image-slide-4.jpg';
 import Image5 from '../assets/image-slide-5.jpg';
+import right from '../assets/icon-arrow-left.svg';
+import left from '../assets/icon-arrow-right.svg';
+
 
 
 
@@ -65,15 +68,25 @@ const Main = () => {
                 <div id="flextwo">
                 <div className="ui">
                 <img src={ui} />
+
+                <h1>
+                    UI/UX
+                </h1>
                 </div>
-                <div>
-                <img  className="app" src={apps} />
+                <div className="app" >
+                <img  src={apps} />
+
+                <h1>
+                    Apps
+                </h1>
                 </div>
 
                 </div>
 
-                <div>
-                <img className="illu"src={illustration}/>
+                <div className="illu">
+                <img src={illustration}/>
+
+                <h1>Illustrations</h1>
                 </div>
                 </div>
               
@@ -127,7 +140,63 @@ const Main = () => {
            }
               </div>
 
+
+           <div className="arrows">
            
+              <img src={right} />
+              <img src={left} />
+             
+              </div>
+           
+       </div>
+
+
+
+
+       <div className="container">
+
+
+
+        <div className="footer">
+
+
+
+     <div className="footerContent">
+            <h1>Book a call with me</h1>
+
+
+            <p className="footerPara">
+                I'd love to have a chat to see how i can help you. The best first
+                step is for us to discuss your project during a free consultation.
+                then we can move forward from there.
+            </p>
+
+            <button className="header-button"> Free Consultation </button>
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+       <div className="header">
+
+        <div className="logo">
+           <img src={logo} />
+        </div>
+
+
+        <div>
+        <button className="header-button"> Free Consultation </button>
+       </div>
+     
+ </div>
        </div>
     </>
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import logo from '../assets/logo.svg';
 import './Main.css'
 import apps from '../assets/pattern-apps.svg';
@@ -7,10 +7,25 @@ import photography from '../assets/pattern-photography.svg';
 import illustration from '../assets/pattern-illustrations.svg';
 import motion from '../assets/pattern-motion-graphics.svg';
 import ui from '../assets/pattern-ui-ux.svg';
+import amypic from '../assets/image-amy.webp';
+import Image1 from '../assets/image-slide-1.jpg';
+import Image2 from '../assets/image-slide-2.jpg';
+import Image3 from '../assets/image-slide-3.jpg';
+import Image4 from '../assets/image-slide-4.jpg';
+import Image5 from '../assets/image-slide-5.jpg';
+
+
+
+
+const imageSlides =[Image1,Image2,Image3,Image4,Image5]
 
 const Main = () => {
+
+
+    const [index,setIndex] = useState(0)
   return (
-    <div>
+    <>
+    <div className="container">
         <div className="header">
 
        <div className="logo">
@@ -39,35 +54,83 @@ const Main = () => {
 
             <div className="gallery">
                 <div className="one">
-                <img src={graphic} />
+                <img className="graphic" src={graphic} />
+
+ 
+               <p>Graphic Design</p>
                 </div>
 
                 <div className="two">
-                <div>
+
+                <div id="flextwo">
+                <div className="ui">
                 <img src={ui} />
                 </div>
                 <div>
-                <img src={apps} />
+                <img  className="app" src={apps} />
+                </div>
+
                 </div>
 
                 <div>
-                <img src={illustration}/>
+                <img className="illu"src={illustration}/>
                 </div>
                 </div>
               
                 <div className="three">
                
-                <div>
+                <div className="photo">
                 <img src={photography} />
                 </div>
                 
-                <div>
+                <div className="motion">
                 <img src ={motion} />
                 </div>
                 </div>
 
             </div>
+
+
+            <div className='amy'>
+
+                <div className='amyImage'>
+                    <img src={amypic}/>
+                </div>
+
+                <div className="amyContent">
+
+                <h1>I'm Amy, and i'd love to <br /> <span className="break">work on your next project </span></h1>
+
+                <p> I love working with others to create beautiful design solutions. I've designed everything from brand illustrations to complete mobile apps. I'm also handy with a camera</p>
+
+
+                 <button className="amybutton"> Free Consultation</button>
+
+                </div>
+
+                
+            </div>
     </div>
+
+       <div className='sliders'>
+              <h1> My Work</h1>
+
+              <div className="imageSlide">
+           {
+             [imageSlides[index],imageSlides[index + 1],imageSlides[index + 2]].map((i,image) => (
+
+
+                <div>
+                <img src={i} />
+                </div>
+            ))
+           }
+              </div>
+
+           
+       </div>
+    </>
+
   )
 }
 

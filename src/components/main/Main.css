@@ -203,15 +203,44 @@
     height:42%;
       border-radius:7px;
       background-color:#61c4b7;
+      position: relative;
 }
 
+.photo h1{
+    position:absolute;
+    top:4.5rem;
+    left:1rem;
+    font-weight:400;
+    color:white;
+}
+
+.photo img{
+    position:absolute;
+    height:55px;
+    top:1.5rem;
+    left:13rem;
+}
 
 .gallery .motion{
-    height:55%;
+    height:50%;
     background-color:#552049;
     position: relative;
-    top:1rem;
+    top:1.7rem;
     border-radius:7px;
+}
+
+.motion img{
+    position:absolute;
+    top:1rem;
+    left:14rem;
+}
+
+.motion h1{
+    position:absolute;
+    color:white;
+    top:6rem;
+    left:1.5rem;
+    font-weight:400;
 }
 
 /* section amy */

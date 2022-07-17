@@ -94,10 +94,15 @@ const Main = () => {
                
                 <div className="photo">
                 <img src={photography} />
+
+                <h1>Photography</h1>
                 </div>
                 
                 <div className="motion">
                 <img src ={motion} />
+
+
+                <h1>Motion Graphics</h1>
                 </div>
                 </div>
 

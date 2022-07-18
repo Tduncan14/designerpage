@@ -20,12 +20,33 @@ import left from '../assets/icon-arrow-right.svg';
 
 
 
-const imageSlides =[Image1,Image2,Image3,Image4,Image5]
+const imageSlides =[Image2,Image3,Image4,Image5,Image1]
 
 const Main = () => {
 
 
     const [index,setIndex] = useState(0)
+
+
+    const prev = () => {
+
+        if(index > 0) {
+        setIndex(index - 1)
+
+        }
+
+        
+    }
+
+
+    const next = () => {
+
+        if(index < 2) {
+        setIndex(index  + 1)
+        }
+
+        
+    }
   return (
     <>
     <div className="container">
@@ -148,8 +169,8 @@ const Main = () => {
 
            <div className="arrows">
            
-              <img src={right} />
-              <img src={left} />
+              <img onClick={prev} src={right} />
+              <img onClick={next} src={left} />
              
               </div>
            

@@ -414,3 +414,56 @@
 .bottom{
     margin-top:4rem;
 }
+
+
+@media screen and (max-width: 480px) {
+
+    /* header */
+
+    .header{
+        display:flex;
+        justify-content:space-between;
+        width:100%;
+        margin-left: auto;
+        margin-right:auto;
+        margin-top:2rem;
+    }
+
+
+     .header button{
+        width:11rem;
+        
+     }
+
+    /* end of header */
+    .content h1{
+        font-size:36px;
+        font-weight:700;
+    }
+
+    .content p {
+        font-size:17px;
+        inline-size:275px;
+        text-align: center;
+        margin-top:1.9rem;
+    }
+
+    .logo img{
+        height:3rem;
+    }
+
+    /* the gallery  */
+
+    .gallery{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        justify-content: center;
+        margin-right:auto;
+        margin-left:auto;
+        margin-bottom:3rem;
+    
+    
+    }
+
+}

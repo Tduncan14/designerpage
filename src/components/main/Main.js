@@ -30,7 +30,7 @@ const Main = () => {
 
     const prev = () => {
 
-        if(index > 0) {
+        if(index > -1) {
         setIndex(index - 1)
 
         }
@@ -41,7 +41,7 @@ const Main = () => {
 
     const next = () => {
 
-        if(index < 2) {
+        if(index < 3) {
         setIndex(index  + 1)
         }
 
@@ -49,7 +49,7 @@ const Main = () => {
     }
   return (
     <>
-    <div className="container">
+    <div className="container mediaQuery">
         <div className="header">
 
        <div className="logo">
@@ -136,9 +136,11 @@ const Main = () => {
                     <img src={amypic}/>
                 </div>
 
+
+
                 <div className="amyContent">
 
-                <h1>I'm Amy, and i'd love to <br /> <span className="break">work on your next project </span></h1>
+                <h1>I'm Amy, and i'd love to <br />  <span className="break">work on your next project </span></h1>
 
                 <p> I love working with others to create beautiful design solutions. I've designed everything from brand illustrations to complete mobile apps. I'm also handy with a camera</p>
 
@@ -196,7 +198,7 @@ const Main = () => {
             <p className="footerPara">
                 I'd love to have a chat to see how i can help you. The best first 
                 step is for us to discuss your project during a free consultation.
-                <span className="paraSpan"> <br />then we can move forward from there.</span>
+                <span className="paraSpan">Then we can move forward from there.</span>
             </p>
 
             </div>
